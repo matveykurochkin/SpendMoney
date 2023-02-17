@@ -1,0 +1,132 @@
+.description { 
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    /* background: linear-gradient(45deg, #EECFBA, #C5DDE8); */
+}
+
+.card {
+    font-family: 'Montserrat', sans-serif;
+    width: 250px;
+    min-height: 300px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    border-radius: 10px;
+    transition: 0.2s;
+    position: relative;
+}
+  
+.card:hover {
+    box-shadow: 4px 8px 10px rgba(161, 161, 161, 0.2);
+    transform: scale(1.1);
+}
+  
+.cardDescription {
+    flex: 0 0 220px; 
+    position: relative;
+    overflow: hidden; 
+}
+  
+.cardImage {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
+.cardImage > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.2s;
+}
+  
+.cardBottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 10px;
+}
+
+.cardTitle {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+}
+
+.cardPrice {
+    text-align: center;
+}
+  
+.cardAdd {
+    display: block;
+    width: 30%;
+    font-weight: 400;
+    font-size: 24px;
+    color: #70c05b;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #70c05b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: auto;
+}
+  
+.cardAdd:hover {
+    border: 1px solid #70c05b;
+    background-color: #70c05b;
+    color: #fff;
+}
+
+.cardDelete{
+    display: block;
+    width: 30%;
+    font-weight: 400;
+    font-size: 24px;
+    color: #f80303;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #f80303;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: auto;
+}
+
+.cardDelete:hover {
+    border: 1px solid #f80303;
+    background-color: #f80303;
+    color: #fff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    width: 100%;
+    max-width: 1000px;
+    justify-content: center;
+    justify-items: center; 
+    column-gap: 30px;
+    row-gap: 30px; 
+    margin: 0 auto;
+  }
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
