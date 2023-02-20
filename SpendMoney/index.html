@@ -17,15 +17,34 @@
         <h1>
             Spend Money
         </h1>
-        <h2>
-            Тут должно быть описание, которое в разработке!
-        </h2>
+        <h3>
+            Представьте, что вы стали самым богатым человеком на планете!
+            <p>Ваше текущее состояние оценивается в 20000000000000 ₽ </p>
+            <p>Сможете ли вы потратить эти деньги?</p>
+            <p>В ассортименте только самые дорогие и шикарные вещи в мире!</p>
+            <p>Удачи!</p>
+      </h3>
     </div>
     </header>
     
     <main>
 
-      <div class="cards"> </div>
+      <div class="navigationBar">
+          <div class="totalMoney">Всего: 20000000000000</div>
+          <div class="spendMoney">Потрачено: 0</div>
+      </div>
+
+      <div class="cards"></div>
+
+      <div class="receipt">
+        <p>Ваш чек</p>
+        <div class="productInReceipt"></div>
+        <div class="resultPriceReceipt">Итого: 0</div>
+      </div>
+
+      <div class="receiptSaveButton">
+        <button class="saveButton" onclick="saveInFile()">Сохранить</button>
+      </div>
 
     </main>
 
