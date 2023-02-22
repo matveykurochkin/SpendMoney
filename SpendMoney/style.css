@@ -6,12 +6,28 @@
 footer {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 body{
     margin: 0;
     padding: 0;
-    background: linear-gradient(45deg, #EECFBA, #C5DDE8); 
+    background: linear-gradient(-45deg, #cc95c0, #dbd4b4, #7aa1d2 );
+    background-size: 250% 250%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .card {
@@ -31,8 +47,8 @@ body{
 }
   
 .card:hover {
-    box-shadow: 4px 8px 10px rgba(161, 161, 161, 0.2);
-    transform: scale(1.1);
+    box-shadow: 4px 8px 10px rgba(54, 54, 54, 0.2);
+    transform: scale(0.95);
 }
   
 .cardDescription {
@@ -129,7 +145,7 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fill, 260px);
     width: 100%;
-    max-width: 1600px;
+    max-width: 1500px;
     justify-content: center;
     justify-items: center; 
     column-gap: 30px;
@@ -148,9 +164,10 @@ body{
     padding-bottom: 20px;
     margin-bottom: 20px;
     overflow: hidden;
-    background-color: #C5DDE8;
-    border-radius: 10px;
+    background-color: #453b80;
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     position: sticky;
@@ -160,13 +177,13 @@ body{
 
 .totalMoney {
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 14px 16px;
 }
 
 .spendMoney {
     display: block;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 14px 16px;
 }
 
@@ -187,18 +204,19 @@ body{
 
 .saveButton{
     font-size: 24px;
-    color: #6103f8;
+    color: #453b80;
     padding: 10px;
-    border: 1px solid #6103f8;
+    border: 1px solid #453b80;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.2s;
     margin-top: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .saveButton:hover {
-    border: 1px solid #6103f8;
-    background-color: #6103f8;
+    border: 1px solid #453b80;
+    background-color: #453b80;
     color: #fff;
 }
 
@@ -211,7 +229,27 @@ body{
     padding-bottom: 10px;
     margin-bottom: 10px; 
 }
-.resultPriseReceipt::after {
+
+.resultPriceReceipt::after {
     content: "₽";
     margin-left: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    padding-top: 30px;
+    width: 500px;
+}
+
+.headerDescription {
+    font-size: 30px;
+}
+
+.mainDescription{
+    font-size: 20px;
 }
