@@ -201,9 +201,41 @@ const products = [
     },
     {
         id: 26,
-        name: "Test Product",
-        price: 20000000000000,
-        image: "",
+        name: "Diamond",
+        price: 1388858900,
+        image: "https://kartinkin.net/uploads/posts/2022-03/1646783121_36-kartinkin-net-p-kartinki-almaza-41.jpg",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 27,
+        name: "Skyscraper",
+        price: 7142948390,
+        image: "https://susanintop.com/wp-content/uploads/2019/01/Уиллис-тауэр.jpg",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 28,
+        name: "Twitter",
+        price: 3287240000000,
+        image: "https://www.liveauctioneers.com/news/wp-content/uploads/2021/03/acn-032321-twitter-featured.jpg",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 29,
+        name: "Helicopter",
+        price: 1120650000,
+        image: "https://www.biz-jet.ru/files/files/RAN_squirrel_helicopter_at_melb_GP_08.jpg",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 30,
+        name: "Gold Bar",
+        price: 4632020,
+        image: "https://cdn1.ozone.ru/s3/multimedia-7/6241285759.jpg",
         count: 0,
         totalPrice: 0
     }
