@@ -218,7 +218,7 @@ const products = [
     {
         id: 28,
         name: "Twitter",
-        price: 3287240000000,
+        price: 328724000000,
         image: "https://www.liveauctioneers.com/news/wp-content/uploads/2021/03/acn-032321-twitter-featured.jpg",
         count: 0,
         totalPrice: 0
@@ -236,6 +236,54 @@ const products = [
         name: "Gold Bar",
         price: 4632020,
         image: "https://cdn1.ozone.ru/s3/multimedia-7/6241285759.jpg",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 31,
+        name: "Air Jordan",
+        price: 49990,
+        image: "https://avatars.mds.yandex.net/get-mpic/4343092/img_id2017183844608819069.png/orig",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 32,
+        name: "Burger",
+        price: 299,
+        image: "http://clipart-library.com/images/yTkrqbggc.jpg",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 33,
+        name: "Diamond Ring",
+        price: 754300,
+        image: "https://avatars.mds.yandex.net/get-mpic/1749547/img_id8796248814112556600.jpeg/orig",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 34,
+        name: "Coke",
+        price: 150,
+        image: "https://shawarmagrill.ru/assets/images/products/312/26289119-digital-image.png",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 35,
+        name: "Bike",
+        price: 55000,
+        image: "https://vamvelosiped.ru/images/product_images/popup_images/-000114285_p_s.jpg",
+        count: 0,
+        totalPrice: 0
+    },
+    {
+        id: 36,
+        name: "Test Product",
+        price: 20000000000000,
+        image: "",
         count: 0,
         totalPrice: 0
     }
