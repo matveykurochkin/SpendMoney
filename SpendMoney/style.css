@@ -187,16 +187,6 @@ body{
     padding: 14px 16px;
 }
 
-.totalMoney::after {
-    content: "₽";
-    margin-left: 5px;
-}
-
-.spendMoney::after {
-    content: "₽";
-    margin-left: 5px;
-}
-
 .receipt{
     text-align: center;
     font-family: 'Montserrat', sans-serif;

@@ -50,8 +50,8 @@ function deleteCard(id){
      sMoney -= product.price;
      product.totalPrice -= product.price;
 
-     spendMoney.innerHTML = "Потрачено: " + sMoney;
-     totalMoney.innerHTML = "Всего: " + money; 
+     spendMoney.innerHTML = "Потрачено: " + sMoney + " ₽";
+     totalMoney.innerHTML = "Всего: " + money + " ₽"; 
      resultPriceReceipt.innerHTML = "Итого: " + sMoney;
 
      renderReceipt();
@@ -65,19 +65,24 @@ function addCard(id){
   products.forEach((product) => {
     if(id == product.id  && product.count < limitProduct && product.price <= money){
 
-     product.count ++;
+     product.count++;
      money -= product.price;
      sMoney += product.price;
      product.totalPrice += product.price;
 
-     totalMoney.innerHTML = "Всего: " + money;
-     spendMoney.innerHTML = "Потрачено: " + sMoney;
+     totalMoney.innerHTML = "Всего: " + money + " ₽";
+     spendMoney.innerHTML = "Потрачено: " + sMoney + " ₽";
      resultPriceReceipt.innerHTML = "Итого: " + sMoney;
 
      renderReceipt();
 
      productsEl.innerHTML = "";
      renderCard();
+
+    if(money == 0){
+      totalMoney.innerHTML = "Тебе удалось потратить все деньги!!!";
+      spendMoney.innerHTML = "Поздравляю!!!";
+    }
     }
    });
 }
@@ -86,7 +91,7 @@ function saveInFile(){
   let text = document.querySelector('.receipt').textContent;
   let file = document.createElement('a');
   file.setAttribute('href', `data:text/plain;charset=utf-8,${encodeURIComponent(text)}`);
-  file.setAttribute('download', 'Your Receipt.txt');
+  file.setAttribute('download', 'Ваш чек.txt');
   file.style.display = 'none';
   document.body.appendChild(file);
   file.click();
