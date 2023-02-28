@@ -278,13 +278,5 @@ const products = [
         image: "https://vamvelosiped.ru/images/product_images/popup_images/-000114285_p_s.jpg",
         count: 0,
         totalPrice: 0
-    },
-    {
-        id: 36,
-        name: "Test Product",
-        price: 20000000000000,
-        image: "",
-        count: 0,
-        totalPrice: 0
     }
 ];
